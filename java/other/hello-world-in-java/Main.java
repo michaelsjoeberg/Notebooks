@@ -1,12 +1,12 @@
 /******************************************
- *  Compilation:  javac HelloWorld.java
- *  Execution:    java HelloWorld
+ *  Compilation:  javac Main.java
+ *  Execution:    java Main
  *
  *  Prints "Hello World".
  *
  ******************************************/
 
-public class HelloWorld {
+public class Main {
 
 	public static void main(String[] args) {
 		// print 'Hello World'
