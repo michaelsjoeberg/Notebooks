@@ -1,0 +1,288 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7790,        279]
+NotebookOptionsPosition[      6275,        219]
+NotebookOutlinePosition[      6697,        236]
+CellTagsIndexPosition[      6654,        233]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Logarithmic Form", "Title",
+ CellChangeTimes->{{3.6849500534049063`*^9, 3.684950064586177*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Identities", "Section",
+ CellChangeTimes->{{3.6849501647655573`*^9, 3.684950210208943*^9}, {
+  3.6849508819020033`*^9, 3.6849508858201113`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"a", "^", "x"}], " ", "\[Equal]", " ", "b"}], " ", "\[Implies]", 
+  " ", 
+  RowBox[{"x", " ", "==", 
+   RowBox[{"Log", "[", 
+    RowBox[{"a", ",", " ", "b"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.684950374248517*^9, 3.6849503803991013`*^9}, {
+  3.684950551991706*^9, 3.684950569791361*^9}, {3.684950631290917*^9, 
+  3.684950657624621*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["a", "x"], "\[Equal]", "b"}], "\[Implies]", 
+  RowBox[{"x", "\[Equal]", 
+   FractionBox[
+    RowBox[{"Log", "[", "b", "]"}], 
+    RowBox[{"Log", "[", "a", "]"}]]}]}]], "Output",
+ CellChangeTimes->{{3.684952298101425*^9, 3.6849523030498*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"E", "^", "x"}], " ", "\[Equal]", " ", "a"}], " ", "\[Implies]", 
+  " ", 
+  RowBox[{"x", " ", "\[Equal]", " ", 
+   RowBox[{"Log", "[", "a", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.684950739588984*^9, 3.6849507887591667`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["\[ExponentialE]", "x"], "\[Equal]", "a"}], "\[Implies]", 
+  RowBox[{"x", "\[Equal]", 
+   RowBox[{"Log", "[", "a", "]"}]}]}]], "Output",
+ CellChangeTimes->{3.684952303183446*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"1", " ", "\[Equal]", " ", 
+  RowBox[{"Log10", "[", "10", "]"}], " ", "\[Equal]", " ", 
+  RowBox[{"Log", "[", "E", "]"}]}]], "Input",
+ CellChangeTimes->{{3.684950825873047*^9, 3.684950846911161*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.6849523032169237`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"0", " ", "\[Equal]", " ", 
+  RowBox[{"Log10", "[", "1", "]"}], " ", "\[Equal]", " ", 
+  RowBox[{"Log", "[", "1", "]"}]}]], "Input",
+ CellChangeTimes->{{3.684950855191877*^9, 3.684950866670184*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.684952303250783*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Example problem 1", "Section",
+ CellChangeTimes->{{3.684950894830331*^9, 3.684950897147739*^9}}],
+
+Cell[TextData[{
+ StyleBox["Solve:\[LineSeparator]",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["10", "x"], "=", "5"}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Text",
+ CellChangeTimes->{{3.6849509156292133`*^9, 3.6849509163556633`*^9}, {
+  3.684950957259439*^9, 3.68495098980961*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"10", "^", "x"}], "==", "5"}], " ", "\[Implies]", " ", 
+  RowBox[{"x", " ", "\[Equal]", " ", 
+   RowBox[{
+    RowBox[{"Log", "[", "5", "]"}], " ", "/", " ", 
+    RowBox[{"Log", "[", "10", "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.684950998480712*^9, 3.684951024238368*^9}, 
+   3.6849510559421167`*^9, {3.6849514023381844`*^9, 3.684951402559596*^9}, {
+   3.6849519133060293`*^9, 3.684951919609543*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["10", "x"], "\[Equal]", "5"}], "\[Implies]", 
+  RowBox[{"x", "\[Equal]", 
+   FractionBox[
+    RowBox[{"Log", "[", "5", "]"}], 
+    RowBox[{"Log", "[", "10", "]"}]]}]}]], "Output",
+ CellChangeTimes->{3.684952303283204*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{
+   RowBox[{"Log", "[", 
+    RowBox[{"10", ",", " ", "5"}], "]"}], ",", " ", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.684951084963852*^9, 3.684951095289535*^9}, {
+  3.684951826055348*^9, 3.684951826237287*^9}, {3.6849519246828613`*^9, 
+  3.68495192608965*^9}, {3.6849519720579557`*^9, 3.684951991014843*^9}}],
+
+Cell[BoxData["0.69897000433601880478626110527550697907`10."], "Output",
+ CellChangeTimes->{3.684952303317525*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Example problem 2", "Section",
+ CellChangeTimes->{{3.684951209853277*^9, 3.684951213618692*^9}}],
+
+Cell[TextData[{
+ StyleBox["Solve:",
+  FontWeight->"Bold"],
+ "\[LineSeparator]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["2", "x"], "=", "32"}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Text",
+ CellChangeTimes->{{3.68495122699535*^9, 3.6849512469597692`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"2", "^", "x"}], " ", "==", " ", "32"}], " ", "\[Implies]", " ", 
+  RowBox[{"x", " ", "\[Equal]", 
+   RowBox[{
+    RowBox[{"Log", "[", "32", "]"}], " ", "/", " ", 
+    RowBox[{"Log", "[", "2", "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.684951265873989*^9, 3.684951295470862*^9}, {
+  3.6849513349659443`*^9, 3.6849513425653133`*^9}, {3.684951442881406*^9, 
+  3.684951446439975*^9}, {3.6849516086643677`*^9, 3.684951608831039*^9}, {
+  3.684951878525806*^9, 3.6849518973465233`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["2", "x"], "\[Equal]", "32"}], "\[Implies]", 
+  RowBox[{"x", "\[Equal]", 
+   FractionBox[
+    RowBox[{"Log", "[", "32", "]"}], 
+    RowBox[{"Log", "[", "2", "]"}]]}]}]], "Output",
+ CellChangeTimes->{3.68495230334947*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{
+   RowBox[{"Log", "[", 
+    RowBox[{"2", ",", " ", "32"}], "]"}], ",", " ", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.684951634806492*^9, 3.684951637647685*^9}, {
+  3.684951669572686*^9, 3.684951672596641*^9}, {3.684951836567292*^9, 
+  3.68495185230831*^9}}],
+
+Cell[BoxData["5.`10."], "Output",
+ CellChangeTimes->{3.684952303381999*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{740, 698},
+WindowMargins->{{Automatic, 54}, {37, Automatic}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
+2013)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "Preprint.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 101, 1, 77, "Title"],
+Cell[CellGroupData[{
+Cell[705, 27, 150, 2, 67, "Section"],
+Cell[CellGroupData[{
+Cell[880, 33, 391, 10, 29, "Input"],
+Cell[1274, 45, 294, 8, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1605, 58, 274, 7, 29, "Input"],
+Cell[1882, 67, 231, 6, 29, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2150, 78, 222, 4, 29, "Input"],
+Cell[2375, 84, 75, 1, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2487, 90, 221, 4, 29, "Input"],
+Cell[2711, 96, 73, 1, 28, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2833, 103, 102, 1, 67, "Section"],
+Cell[2938, 106, 337, 10, 38, "Text"],
+Cell[CellGroupData[{
+Cell[3300, 120, 450, 10, 29, "Input"],
+Cell[3753, 132, 274, 8, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4064, 145, 358, 7, 29, "Input"],
+Cell[4425, 154, 113, 1, 28, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4587, 161, 102, 1, 67, "Section"],
+Cell[4692, 164, 291, 10, 38, "Text"],
+Cell[CellGroupData[{
+Cell[5008, 178, 528, 11, 29, "Input"],
+Cell[5539, 191, 273, 8, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5849, 204, 308, 7, 29, "Input"],
+Cell[6160, 213, 75, 1, 62, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
