@@ -1,8 +1,10 @@
-/*
-*	Run in Terminal
-*	1. javac HelloWorld.java
-*	2. java HelloWorld
-*/
+/******************************************
+ *  Compilation:  javac HelloWorld.java
+ *  Execution:    java HelloWorld
+ *
+ *  Prints "Hello World".
+ *
+ ******************************************/
 
 public class HelloWorld {
 
