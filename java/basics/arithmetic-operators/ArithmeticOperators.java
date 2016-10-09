@@ -17,28 +17,32 @@ public class ArithmeticOperators {
 		double b = 20.0;
 
 		// addition
-		System.out.println(a + b); 					// a + b
-		System.out.println(a + (a + b)); 			// a + (a + b)
+		System.out.println(a + b); 					// 30
+		System.out.println(a + (a + b)); 			// 40
 
 		// subtraction
-		System.out.println(b - a); 					// b - a
-		System.out.println(b - b); 					// b - b
+		System.out.println(b - a); 					// 10
+		System.out.println(b - b); 					// 0
 
 		// multiplication
-		System.out.println(a * b); 					// a * b
-		System.out.println(a * (a * 2)); 			// a * (a * 2)
+		System.out.println(a * b); 					// 200
+		System.out.println(a * (a * 2)); 			// 200
 
 		// division
-		System.out.println(b / a);					// b / a
-		System.out.println((a * b) / a); 			// (a * b) / a
+		System.out.println(b / a);					// 2
+		System.out.println((a * b) / a); 			// 20
 
 		// modulus
-		System.out.println(b % a); 					// b % a
-		System.out.println(a % b);					// a % b
+		System.out.println(b % a); 					// 0
+		System.out.println(a % b);					// 10
 
-		// exponent
-		System.out.println(Math.pow(a, 2));			// a^2
-		System.out.println(Math.pow(b, (a / 10)));	// b^(a / 10)
+		// increment
+		a++;
+		System.out.println(a);						// 11
+
+		// decrement
+		b--;
+		System.out.println(b);						// 19
 	}
 
 }
