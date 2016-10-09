@@ -1,6 +1,6 @@
 /******************************************
- *  Compilation:  javac Main.java
- *  Execution:    java Main
+ *  Compilation:  javac ArithmeticOperators.java
+ *  Execution:    java ArithmeticOperators
  *
  *  Prints the result from arithmetic 
  *	operations.
@@ -9,7 +9,7 @@
 
 import java.lang.*;
 
-public class Main {
+public class ArithmeticOperators {
 
 	public static void main(String[] args) {
 		// example variables
