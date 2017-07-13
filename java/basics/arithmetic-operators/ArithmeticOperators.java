@@ -1,11 +1,17 @@
-/******************************************
- *  Compilation:  javac ArithmeticOperators.java
- *  Execution:    java ArithmeticOperators
+/******************************************************
  *
- *  Prints the result from arithmetic 
- *	operations.
+ *  Compute and print the result from various
+ *  arithmetic operations.
  *
- ******************************************/
+ *  Author 			: Michael Sjoeberg (github.com/mqe)
+ *
+ *  Date 			: 13 July 2017
+ *  Updated 		: 13 July 2017 (Michael Sjoeberg)
+ * 
+ *  Compilation 	: javac ArithmeticOperators.java
+ *  Execution 		: java ArithmeticOperators
+ *
+ ******************************************************/
 
 public class ArithmeticOperators {
 
@@ -14,33 +20,103 @@ public class ArithmeticOperators {
 		double a = 10.0;
 		double b = 20.0;
 
-		// addition
-		System.out.println(a + b); 					// 30
-		System.out.println(a + (a + b)); 			// 40
+		// print credits
+		System.out.println("---------------------------------------------------\n" +
+						   "Author 	  : Michael Sjoeberg (github.com/mqe)\n" +
+						   "Date 	  : 13 July 2017\n" +
+						   "Updated   : 13 July 2017 (Michael Sjoeberg)\n" +
+						   "---------------------------------------------------\n");
 
-		// subtraction
-		System.out.println(b - a); 					// 10
-		System.out.println(b - b); 					// 0
+		// print example variables
+		System.out.println("a = " + Double.toString(a));
+		System.out.println("b = " + Double.toString(b));
+		System.out.println(" ");
 
-		// multiplication
-		System.out.println(a * b); 					// 200
-		System.out.println(a * (a * 2)); 			// 200
+		// addition examples
+		System.out.println("Addition:");
+		addition(a, b);
 
-		// division
-		System.out.println(b / a);					// 2
-		System.out.println((a * b) / a); 			// 20
+		// subtraction examples
+		System.out.println("Subtraction:");
+		subtraction(a, b);
 
-		// modulus
-		System.out.println(b % a); 					// 0
-		System.out.println(a % b);					// 10
+		// multiplication examples
+		System.out.println("Multiplication:");
+		multiplication(a, b);
+
+		// division examples
+		System.out.println("Division:");
+		division(a, b);
+
+		// modulo examples
+		System.out.println("Modulo:");
+		modulo(a, b);
 
 		// increment
+		System.out.println("Increment:");
 		a++;
-		System.out.println(a);						// 11
+		System.out.println("a++ => a = " + Double.toString(a));
+		System.out.println(" ");
 
 		// decrement
+		System.out.println("Decrement:");
 		b--;
-		System.out.println(b);						// 19
+		System.out.println("b-- => b = " + Double.toString(b));
+		System.out.println(" ");
 	}
 
+	/**
+	 * Private method for addition.
+	 */
+	private static void addition(double a, double b) {
+
+		// addition examples
+		System.out.println("a + b = "  		 	+ Double.toString(a + b));
+		System.out.println("a + (a + b) = " 	+ Double.toString(a + (a + b)));
+		System.out.println(" ");
+	}
+
+	/**
+	 * Private method for subtraction.
+	 */
+	private static void subtraction(double a, double b) {
+
+		// subtraction examples
+		System.out.println("a - b = "  			+ Double.toString(a - b));
+		System.out.println("a - (a - b) = "  	+ Double.toString(a - (a - b)));
+		System.out.println(" ");
+	}
+
+	/**
+	 * Private method for multiplication.
+	 */
+	private static void multiplication(double a, double b) {
+
+		// multiplication examples
+		System.out.println("a * b = "  			+ Double.toString(a * b));
+		System.out.println("a * (a * 2) = "  	+ Double.toString(a * (a * 2)));
+		System.out.println(" ");
+	}
+
+	/**
+	 * Private method for division.
+	 */
+	private static void division(double a, double b) {
+
+		// division examples
+		System.out.println("a / b = "  			+ Double.toString(a / b));
+		System.out.println("(a * b) / a = "  	+ Double.toString((a * b) / a));
+		System.out.println(" ");
+	}
+
+	/**
+	 * Private method for modulo.
+	 */
+	private static void modulo(double a, double b) {
+
+		// modulo examples
+		System.out.println("a % b = "  			+ Double.toString(a % b));
+		System.out.println("(a * b) % b = "  	+ Double.toString((a * b) % b));
+		System.out.println(" ");
+	}
 }
